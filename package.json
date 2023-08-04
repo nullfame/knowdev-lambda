@@ -32,5 +32,8 @@
   "volta": {
     "node": "18.16.0",
     "npm": "9.5.1"
+  },
+  "dependencies": {
+    "@knowdev/log": "^0.4.0"
   }
 }
