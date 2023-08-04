@@ -1,16 +1,14 @@
-# KnowDev Project 🧧
+# KnowDev Lambda 🚟
+
+AWS Lambda toolkit
 
 ## 📋 Usage
 
 ``` bash
-npm install --save @knowdev/XXXXXX
+npm install --save @knowdev/lambda
 ```
 
 ## 📖 Reference
-
-## 🚀 Deployment
-
-`npm publish --access=public`
 
 ## 📝 Changelog
 
