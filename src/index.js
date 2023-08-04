@@ -1,4 +1,6 @@
+/* eslint-disable global-require */
+
 module.exports = {
-  // log:
+  log: require("@knowdev/log"),
   // projectHandler:
 };

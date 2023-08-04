@@ -1,3 +1,5 @@
+const log = require("@knowdev/log");
+
 const index = require("../index");
 
 //
@@ -32,6 +34,8 @@ describe("Package export", () => {
   it("Is an object", async () => {
     expect(index).toBeObject();
   });
-  it.todo("Exports the logger");
+  it("Exports the logger", () => {
+    expect(index.log).toBe(log);
+  });
   it.todo("Exports a project handler");
 });
