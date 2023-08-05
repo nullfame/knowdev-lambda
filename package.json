@@ -15,6 +15,9 @@
     "test:spec:index": "jest ./src/__tests__/index.spec.js",
     "postversion": "npm publish"
   },
+  "dependencies": {
+    "@knowdev/log": "^0.4.0"
+  },
   "devDependencies": {
     "eslint": "^8.46.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -32,8 +35,5 @@
   "volta": {
     "node": "18.16.0",
     "npm": "9.5.1"
-  },
-  "dependencies": {
-    "@knowdev/log": "^0.4.0"
   }
 }
