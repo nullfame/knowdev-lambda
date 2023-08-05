@@ -18,6 +18,8 @@
     "postversion": "npm publish"
   },
   "dependencies": {
+    "@knowdev/errors": "^1.4.0",
+    "@knowdev/functions": "^1.0.0",
     "@knowdev/log": "^0.4.0"
   },
   "devDependencies": {
