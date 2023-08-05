@@ -20,7 +20,7 @@
   "dependencies": {
     "@knowdev/errors": "^1.4.0",
     "@knowdev/functions": "^1.0.0",
-    "@knowdev/http": "^1.2.0",
+    "@knowdev/http": "^1.3.0",
     "@knowdev/log": "^0.4.0"
   },
   "devDependencies": {
