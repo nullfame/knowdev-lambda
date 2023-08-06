@@ -2,5 +2,5 @@
 
 module.exports = {
   log: require("@knowdev/log"),
-  // projectHandler:
+  projectHandler: require("./modules").projectHandler,
 };

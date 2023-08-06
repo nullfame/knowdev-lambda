@@ -1,6 +1,7 @@
 const log = require("@knowdev/log");
 
 const index = require("../index");
+const projectHandler = require("../modules/projectHandler.module");
 
 //
 //
@@ -37,5 +38,7 @@ describe("Package export", () => {
   it("Exports the logger", () => {
     expect(index.log).toBe(log);
   });
-  it.todo("Exports a project handler");
+  it("Exports a project handler", () => {
+    expect(index.projectHandler).toBe(projectHandler);
+  });
 });
