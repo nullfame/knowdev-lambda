@@ -151,5 +151,14 @@ describe("Project handler module", () => {
       expect(response.status).toBeUndefined();
       expect(response.statusCode).toBe(500);
     });
+    it.todo("Decorates headers with project invocation");
+    it.todo("Adds the project environment if it is present");
+    it.todo("Does not adds the project environment if it is not present");
+    it.todo("Adds the project handler if it is present");
+    it.todo("Does not adds the project handler if it is not present");
+    it.todo("Adds the project key if it is present");
+    it.todo("Does not adds the project key if it is not present");
+    it.todo("Adds the project version if it is present");
+    it.todo("Does not adds the project version if it is not present");
   });
 });

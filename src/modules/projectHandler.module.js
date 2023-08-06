@@ -80,13 +80,11 @@ function projectHandler(
       if (error.isProjectError) {
         log.trace("Caught ProjectError");
         log.var({ projectError: error });
-        // TODO: respond with correct error
         response = error;
       } else {
         // otherwise, respond as unhandled
         log.trace("Caught unhandled error");
         log.fatal.var({ unhandledError: error });
-        // TODO: respond with response error
         response = UnhandledError();
       }
     }
@@ -96,7 +94,6 @@ function projectHandler(
     // Postprocess
     //
 
-    // TODO: does response need to conform to API Gateway response?
     if (api) {
       log.trace("Formatting response for API Gateway");
 
@@ -122,7 +119,7 @@ function projectHandler(
         response.body = JSON.stringify(response.body);
       }
 
-      // TODO: Decorate headers?
+      // TODO: Decorate headers
     }
 
     //
