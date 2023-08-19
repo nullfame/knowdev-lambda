@@ -1,6 +1,6 @@
 {
   "name": "@knowdev/lambda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AWS Lambda toolkit",
   "license": "UNLICENSED",
   "author": "Adam Finlayson",
