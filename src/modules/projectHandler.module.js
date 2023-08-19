@@ -41,7 +41,7 @@ function projectHandler(
   // Setup
   //
 
-  return (event, context, ...params) => {
+  return async (event, context, ...params) => {
     let response;
 
     try {
@@ -68,7 +68,7 @@ function projectHandler(
 
       // Invoke handler
       log.trace(`Handler call {name:${name}}`);
-      response = handler(event, context, ...params);
+      response = await handler(event, context, ...params);
       log.trace(`Handler exit {name:${name}}`);
 
       //

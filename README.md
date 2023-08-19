@@ -25,6 +25,8 @@ exports.handler = projectHandler(async (event, context) => {
 
 ## 📝 Changelog
 
+* v1.0.1 - Make handler async 🤦🏻‍♂️
+
 ## 🛣 Roadmap
 
 ### Wishlist 🌠
