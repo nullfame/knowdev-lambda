@@ -25,6 +25,7 @@ exports.handler = projectHandler(async (event, context) => {
 
 ## 📝 Changelog
 
+* v1.1.0 - `log` supports JSON
 * v1.0.1 - Make handler async 🤦🏻‍♂️
 
 ## 🛣 Roadmap
