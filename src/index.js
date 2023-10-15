@@ -1,6 +1,7 @@
-/* eslint-disable global-require */
+const { log } = require("./core");
+const { projectHandler } = require("./modules");
 
 module.exports = {
-  log: require("@knowdev/log"),
-  projectHandler: require("./modules").projectHandler,
+  log,
+  projectHandler,
 };

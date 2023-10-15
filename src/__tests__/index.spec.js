@@ -1,4 +1,4 @@
-const log = require("@knowdev/log");
+const { log } = require("../core");
 
 const index = require("../index");
 const projectHandler = require("../modules/projectHandler.module");
