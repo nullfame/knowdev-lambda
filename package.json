@@ -13,6 +13,7 @@
     "test": "jest src/",
     "test:clean": "rimraf coverage/",
     "test:coverage": "jest --coverage src/",
+    "test:spec:core": "jest ./src/__tests__/core.spec.js",
     "test:spec:index": "jest ./src/__tests__/index.spec.js",
     "test:spec:index.module": "jest ./src/modules/__tests__/index.module.spec.js",
     "test:spec:projectHandler.module": "jest ./src/modules/__tests__/projectHandler.module.spec.js",
