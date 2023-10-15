@@ -1,7 +1,8 @@
 const { UnavailableError, UnhandledError } = require("@knowdev/errors");
 const { envBoolean } = require("@knowdev/functions");
 const { formatError } = require("@knowdev/http");
-const log = require("@knowdev/log");
+
+const { log } = require("../core");
 
 //
 //
