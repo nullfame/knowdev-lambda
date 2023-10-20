@@ -46,6 +46,8 @@ function projectHandler(
     let response;
 
     try {
+      log.init({ handler: name, invoke: context.awsRequestId });
+      log.trace("Project logging in trace mode");
       log.info.var({ event });
 
       //
