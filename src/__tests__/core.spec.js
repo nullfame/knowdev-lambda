@@ -80,6 +80,14 @@ describe("Core", () => {
       core.log.init();
       expect(core.log.tag).toHaveBeenCalled();
     });
+    it("Log.init takes and tags handler", () => {
+      expect(core.log.tag).not.toHaveBeenCalled();
+      core.log.init({ handler: "MOCK_HANDLER" });
+      expect(core.log.tag).toHaveBeenCalled();
+      expect(core.log.tag.mock.calls[0][0]).toBeObject();
+      expect(core.log.tag.mock.calls[0][0]).toHaveProperty("handler");
+      expect(core.log.tag.mock.calls[0][0].handler).toBe("MOCK_HANDLER");
+    });
     it("Log.init takes and tags invoke", () => {
       expect(core.log.tag).not.toHaveBeenCalled();
       core.log.init({ invoke: "MOCK_INVOKE" });

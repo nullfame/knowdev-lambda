@@ -24,7 +24,7 @@ const log = new Logger({
 // Functions
 //
 
-function init({ invoke } = {}) {
+function init({ handler, invoke } = {}) {
   const tags = {};
 
   // Commit
@@ -35,6 +35,11 @@ function init({ invoke } = {}) {
   // Environment
   if (process.env.PROJECT_ENV) {
     tags.env = process.env.PROJECT_ENV;
+  }
+
+  // Environment
+  if (handler) {
+    tags.handler = handler;
   }
 
   // Invoke
