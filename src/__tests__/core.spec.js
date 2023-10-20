@@ -80,5 +80,13 @@ describe("Core", () => {
       core.log.init();
       expect(core.log.tag).toHaveBeenCalled();
     });
+    it("Log.init takes and tags invoke", () => {
+      expect(core.log.tag).not.toHaveBeenCalled();
+      core.log.init({ invoke: "MOCK_INVOKE" });
+      expect(core.log.tag).toHaveBeenCalled();
+      expect(core.log.tag.mock.calls[0][0]).toBeObject();
+      expect(core.log.tag.mock.calls[0][0]).toHaveProperty("invoke");
+      expect(core.log.tag.mock.calls[0][0].invoke).toBe("MOCK_INVOKE");
+    });
   });
 });
