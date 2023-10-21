@@ -121,6 +121,17 @@ describe("Project handler module", () => {
       expect(response.isProjectError).toBeTrue();
       expect(response.status).toBe(404);
     });
+    describe("Error avoiding", () => {
+      it("Does not throw an error if context is undefined", async () => {
+        const callback = jest.fn();
+        const handler = projectHandler(callback);
+        const response = await handler(mockEvent, undefined);
+        expect(callback).toHaveBeenCalledTimes(1);
+        if (response) {
+          expect(response.isProjectError).not.toBeTrue();
+        }
+      });
+    });
   });
   describe("Unavailable mode", () => {
     it("Works as normal when process.env.PROJECT_UNAVAILABLE is set to false", async () => {

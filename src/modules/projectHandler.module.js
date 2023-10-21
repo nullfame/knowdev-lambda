@@ -42,7 +42,7 @@ function projectHandler(
   // Setup
   //
 
-  return async (event, context, ...params) => {
+  return async (event, context = {}, ...params) => {
     let response;
 
     try {
